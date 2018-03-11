@@ -1,0 +1,6 @@
+a = 5 * 5
+b = a - 5
+a = b
+c = a ^ 10
+b = c
+print "variable b = [" + b + " ] "
