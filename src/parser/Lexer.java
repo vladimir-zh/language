@@ -25,6 +25,7 @@ public class Lexer {
         TokenType.LPAREN, TokenType.RPAREN,
         TokenType.EQ, TokenType.LT, TokenType.GT
     };*/
+    // New comment
     
     private static Map<String, TokenType> OPERATORS;
     static{
