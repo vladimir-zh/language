@@ -25,7 +25,6 @@ public class Lexer {
         TokenType.LPAREN, TokenType.RPAREN,
         TokenType.EQ, TokenType.LT, TokenType.GT
     };*/
-    // New comment
     
     private static Map<String, TokenType> OPERATORS;
     static{
@@ -52,7 +51,7 @@ public class Lexer {
         
         OPERATORS.put("&&", TokenType.AMPAMP);
         OPERATORS.put("||", TokenType.BARBAR);
-        
+       
     }
 
     private final String input;
@@ -211,9 +210,8 @@ public class Lexer {
         char current = peek(0);
         while(true){
             if(current == '\0') throw new RuntimeException("Missing closing tag");
-            if(current == '*' && peek(1) == '/'){
-                break;
-            }
+            if(current == '*' && peek(1) == '/') break;
+            current = next();
         }
         next();
         next();

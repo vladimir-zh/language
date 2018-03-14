@@ -1,6 +1,6 @@
-a = 5 * 5
-b = a - 5
-a = b
-c = a ^ 10
-b = c
-print "variable b = [" + b + " ] "
+в = pi * 2
+b = a ^ 5
+c = b - a
+if(b <=10) print "true"
+else
+print "false"

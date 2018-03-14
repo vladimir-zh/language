@@ -13,13 +13,13 @@ import java.util.Map;
  * @author Vladimir
  */
 public class Varibales {
-     private static final NumberValue ZERO = new NumberValue(0);
+    private static final NumberValue ZERO = new NumberValue(0);
     private static final Map<String, Value> variables;
     
     static {
         variables = new HashMap<>();
         variables.put("PI", new NumberValue(Math.PI));
-        variables.put("pt", new NumberValue(Math.PI));
+        variables.put("pi", new NumberValue(Math.PI));
         variables.put("E", new NumberValue(Math.E));
         variables.put("e", new NumberValue(Math.E));
         variables.put("GOLDEN_RATIO", new NumberValue(1.618));
